@@ -1,7 +1,7 @@
-# D U R A C O N  v2.2 - (c) 2004 
+# D U R A C O N  V1.3 - (c) 2004 
   
 # Title of the Project 
-Example Project - 2 ( 20040305 ) ;
+Example Project - 2 (20040305) ;
  
  
 # Model parameters 
@@ -53,6 +53,6 @@ Example Project - 2 ( 20040305 ) ;
 #1_3_5_7_9_1 
        1080 ; 
  
-# C:\Program Files\Duracon\datafiles\example2_me.dat
+# 
  
 END_OF_FILE ;

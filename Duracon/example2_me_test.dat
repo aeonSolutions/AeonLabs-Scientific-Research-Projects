@@ -1,0 +1,58 @@
+# D U R A C O N  V1.0 - (c) 2004 
+  
+# Title of the Project 
+esdrg - dsfg (04-04-2005) ;
+ 
+ 
+# Model parameters 
+     1 ; # Inital seed (1-randomly generated, 0-user defined) 
+     1 ; # Diffusion coefficient (0-Dchloride profiling, 1-Dmigration tests, 2-Profile given)
+     10 ; # Time series (n>0, integer) 
+     0 ; # Profile data (5<n<12, interger; 0-no profile) 
+     0 ; # Profile prediction time (0-no, 1-yes) 
+ 
+ 
+# Distribution data table 
+#   Distribution types: 
+#     0 - normal 
+#     1 - lognormal 
+#     2 - beta 
+#     7 - deterministic 
+# 
+#         xc       Dcoef         Ccr          Cs           n           t          to           T 
+#       (mm) (1e-12m2/s) (%wt.conc.) (%wt.conc.)         (-)     (years)      (days)  (ºCelcius) 
+# 
+#1_3_5_7_9_1#2_4_6_8_0_2#1_3_5_7_9_1#2_4_6_8_0_2#1_3_5_7_9_1#2_4_6_8_0_2#1_3_5_7_9_1#1_3_5_7_9_1 
+           0           0           0           0           0           7           7           0 ;
+    0001.000    0001.000    0001.000    0001.000    0001.000    0000.000    0028.000    0021.000 ;
+    0001.000    0001.000    0001.000    0001.000    0001.000    0050.000    0000.000    0000.000 ;
+ 
+ 
+# Profile data table 
+# xc (cm) / Cxc (%wt.conc.) 
+# 
+#1_3_5_7#1_3_5_7#1_3_5_7#1_3_5_7#1_3_5_7#1_3_5_7#1_3_5_7#1_3_5_7#1_3_5_7#1_3_5_7#1_3_5_7#1_3_5_7 
+   00.00   00.00   00.00   00.00   00.00   00.00   00.00   00.00   00.00   00.00   00.00   00.00 ;
+   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000   0.000 ;
+ 
+ 
+# Nº Simulations 
+#          n (integer) 
+#1_3_5_7_9_1 
+    10000 ; 
+ 
+ 
+### Initial Seed 
+#          i (integer) 
+#1_3_5_7_9_1 
+               0 ; 
+ 
+ 
+### Profile prediction time (days) 
+#          i (integer) 
+#1_3_5_7_9_1 
+           0 ; 
+ 
+# 
+ 
+END_OF_FILE ;
