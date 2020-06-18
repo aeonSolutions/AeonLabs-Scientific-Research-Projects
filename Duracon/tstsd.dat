@@ -1,0 +1,58 @@
+# D U R A C O N  v2.2 - (c) 2004 
+  
+# Title of the Project 
+Example Project - 2 ( 20040305 ) ;
+ 
+ 
+# Model parameters 
+     1 ; # Inital seed (1-randomly generated, 0-user defined) 
+     2 ; # Diffusion coefficient (0-Dchloride profiling, 1-Dmigration tests, 2-Profile given)
+     10 ; # Time series (n>0, integer) 
+     8 ; # Profile data (5<n<12, interger; 0-no profile) 
+     1 ; # Profile prediction time (0-no, 1-yes) 
+ 
+ 
+# Distribution data table 
+#   Distribution types: 
+#     0 - normal 
+#     1 - lognormal 
+#     2 - beta 
+#     7 - deterministic 
+# 
+#         xc       Dcoef         Ccr          Cs           n           t          to           T 
+#       (mm) (1e-12m2/s) (%wt.conc.) (%wt.conc.)         (-)     (years)      (days)  (ºCelcius) 
+# 
+#1_3_5_7_9_1#2_4_6_8_0_2#1_3_5_7_9_1#2_4_6_8_0_2#1_3_5_7_9_1#2_4_6_8_0_2#1_3_5_7_9_1#1_3_5_7_9_1 
+           0           7           0           7           2           7           7           0 ;
+    0042,000    0000,000    0000,000    0000,000    0017,000    0000,000    0028,000    0021,000 ;
+    0008,000    0000,000    0000,000    0000,000    0029,000    0050,000    0000,000    0000,000 ;
+ 
+ 
+# Profile data table 
+# xc (cm) / Cxc (%wt.conc.) 
+# 
+#1_3_5_7#1_3_5_7#1_3_5_7#1_3_5_7#1_3_5_7#1_3_5_7#1_3_5_7#1_3_5_7#1_3_5_7#1_3_5_7#1_3_5_7#1_3_5_7 
+   00,00   01,00   01,00   02,00   03,00   04,00   05,00   06,00   00,00   00,00   00,00   00,00 ;
+   1,000   0,000   0,000   0,000   0,000   0,000   0,000   0,000   0,000   0,000   0,000   0,000 ;
+ 
+ 
+# Nº Simulations 
+#          n (integer) 
+#1_3_5_7_9_1 
+    10000 ; 
+ 
+ 
+### Initial Seed 
+#          i (integer) 
+#1_3_5_7_9_1 
+               0 ; 
+ 
+ 
+### Profile prediction time (days) 
+#          i (integer) 
+#1_3_5_7_9_1 
+       1080 ; 
+ 
+# C:\Documents and Settings\Angelfyre\Desktop\MGY 200414 DURACON_v1.2\datafiles\tstsd.dat
+ 
+END_OF_FILE ;
