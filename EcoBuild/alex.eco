@@ -1,0 +1,9 @@
+# EcoBuild  V1.0 - (c) 2005 
+Met.Pillar;4;-;-;83.2;3; - ; - ; - ; - ; - ; - ; - ; - ; - ; - ; - ;2;Projecto Alexandre;1;
+Met.Beam;1;-;-;92.6;6; - ; - ; - ; - ; - ; - ; - ; - ; - ; - ; - ;2;Projecto Alexandre;1;
+Met.Beam;1;-;-;92.6;7; - ; - ; - ; - ; - ; - ; - ; - ; - ; - ; - ;2;Projecto Alexandre;1;
+Met.Beam;1;-;-;92.6;5; - ; - ; - ; - ; - ; - ; - ; - ; - ; - ; - ;2;Projecto Alexandre;1;
+Conc.Pillar;4;0.3;0.3;-;3;0;0;5;0;0;0;16;0;0;350;1900;324.22;Projecto Alexandre;1;
+Conc.Beam;1;0.6;0.25;-;6;0;4.87;2.43;0;0;12.51;0;6.26;0;350;1900;324.22;Projecto Alexandre;1;
+Conc.Beam;1;0.6;0.25;-;7;0;0.21;2.5;0;0;1.27;0;2.26;0;350;1900;324.22;Projecto Alexandre;1;
+Conc.Beam;1;0.6;0.25;-;5;0;7.3;6.1;0;0;2.74;0;0;0;350;1900;324.22;Projecto Alexandre;1;
