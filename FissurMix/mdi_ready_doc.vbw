@@ -1,0 +1,11 @@
+Core = 66, 87, 595, 573, C
+frmMain = 213, 109, 742, 595, , 88, 116, 617, 602, C
+frmSplash = 0, 0, 529, 486, C, 132, 174, 661, 660, C
+frmAbout = 66, 87, 595, 573, C, 132, 174, 661, 660, C
+frmChild = 44, 58, 684, 431, C, 113, 70, 642, 556, C
+Engine = 44, 58, 544, 544, C
+frm_perform_calculations = 110, 145, 682, 631, C, 88, 116, 660, 602, C
+Gobal_vars = 154, 181, 731, 689, C
+Frm_Child_functions = 22, 29, 599, 515, Z
+File_handling = 110, 145, 687, 631, C
+frm_graph_exp_data = 176, 192, 700, 662, , 44, 48, 568, 518, C
