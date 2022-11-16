@@ -1,0 +1,64 @@
+Line 41: Class TabDlg.SSTab of control SSTab was not a loaded control class.
+Line 108: Class MSChart20Lib.MSChart of control temperature_big_chart was not a loaded control class.
+Line 132: Class MSChart20Lib.MSChart of control temperature_chart was not a loaded control class.
+Line 158: Class MSChart20Lib.MSChart of control displacement_chart was not a loaded control class.
+Line 184: Class MSChart20Lib.MSChart of control tension_chart was not a loaded control class.
+Line 232: Class MSChart20Lib.MSChart of control displacement_big_chart was not a loaded control class.
+Line 240: Class MSChart20Lib.MSChart of control tension_big_chart was not a loaded control class.
+Line 272: Class MSForms.Label of control Label1 was not a loaded control class.
+Line 47: The property name _ExtentX in SSTab is invalid.
+Line 48: The property name _ExtentY in SSTab is invalid.
+Line 49: The property name _Version in SSTab is invalid.
+Line 50: The property name Tabs in SSTab is invalid.
+Line 51: The property name TabsPerRow in SSTab is invalid.
+Line 52: The property name TabHeight in SSTab is invalid.
+Line 53: The property name TabCaption(0) in SSTab is invalid.
+Line 54: The property name TabPicture(0) in SSTab is invalid.
+Line 55: The property name Tab(0).ControlEnabled in SSTab is invalid.
+Line 56: The property name Tab(0).Control(0) in SSTab is invalid.
+Line 57: The property name Tab(0).Control(0).Enabled in SSTab is invalid.
+Line 58: The property name Tab(0).Control(1) in SSTab is invalid.
+Line 59: The property name Tab(0).Control(1).Enabled in SSTab is invalid.
+Line 60: The property name Tab(0).Control(2) in SSTab is invalid.
+Line 61: The property name Tab(0).Control(2).Enabled in SSTab is invalid.
+Line 62: The property name Tab(0).Control(3) in SSTab is invalid.
+Line 63: The property name Tab(0).Control(3).Enabled in SSTab is invalid.
+Line 64: The property name Tab(0).Control(4) in SSTab is invalid.
+Line 65: The property name Tab(0).Control(4).Enabled in SSTab is invalid.
+Line 66: The property name Tab(0).Control(5) in SSTab is invalid.
+Line 67: The property name Tab(0).Control(5).Enabled in SSTab is invalid.
+Line 68: The property name Tab(0).Control(6) in SSTab is invalid.
+Line 69: The property name Tab(0).Control(6).Enabled in SSTab is invalid.
+Line 70: The property name Tab(0).ControlCount in SSTab is invalid.
+Line 71: The property name TabCaption(1) in SSTab is invalid.
+Line 72: The property name TabPicture(1) in SSTab is invalid.
+Line 73: The property name Tab(1).ControlEnabled in SSTab is invalid.
+Line 74: The property name Tab(1).Control(0) in SSTab is invalid.
+Line 75: The property name Tab(1).Control(1) in SSTab is invalid.
+Line 76: The property name Tab(1).Control(2) in SSTab is invalid.
+Line 77: The property name Tab(1).Control(3) in SSTab is invalid.
+Line 78: The property name Tab(1).Control(4) in SSTab is invalid.
+Line 79: The property name Tab(1).Control(5) in SSTab is invalid.
+Line 80: The property name Tab(1).Control(6) in SSTab is invalid.
+Line 81: The property name Tab(1).ControlCount in SSTab is invalid.
+Line 82: The property name TabCaption(2) in SSTab is invalid.
+Line 83: The property name TabPicture(2) in SSTab is invalid.
+Line 84: The property name Tab(2).ControlEnabled in SSTab is invalid.
+Line 85: The property name Tab(2).Control(0) in SSTab is invalid.
+Line 86: The property name Tab(2).ControlCount in SSTab is invalid.
+Line 87: The property name TabCaption(3) in SSTab is invalid.
+Line 88: The property name TabPicture(3) in SSTab is invalid.
+Line 89: The property name Tab(3).ControlEnabled in SSTab is invalid.
+Line 90: The property name Tab(3).Control(0) in SSTab is invalid.
+Line 91: The property name Tab(3).ControlCount in SSTab is invalid.
+Line 111: The property name OleObjectBlob in temperature_big_chart is invalid.
+Line 135: The property name OleObjectBlob in temperature_chart is invalid.
+Line 161: The property name OleObjectBlob in displacement_chart is invalid.
+Line 187: The property name OleObjectBlob in tension_chart is invalid.
+Line 235: The property name OleObjectBlob in displacement_big_chart is invalid.
+Line 243: The property name OleObjectBlob in tension_big_chart is invalid.
+Line 278: The property name Caption in Label1 is invalid.
+Line 279: The property name Size in Label1 is invalid.
+Line 281: The property name FontHeight in Label1 is invalid.
+Line 282: The property name FontCharSet in Label1 is invalid.
+Line 283: The property name FontPitchAndFamily in Label1 is invalid.

@@ -1,0 +1,221 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0049)http://www-unix.mcs.anl.gov/dbpp/text/node90.html -->
+<!Converted with LaTeX2HTML 95.1 (Fri Jan 20 1995) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds ><HTML><HEAD><TITLE>7.8 Case Study: Gaussian Elimination</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR></HEAD>
+<BODY>
+<META name=description value="7.8 Case Study: Gaussian Elimination">
+<META name=keywords value="book">
+<META name=resource-type value="document">
+<META name=distribution value="global">
+<P><BR>
+<HR>
+<A href="http://www-unix.mcs.anl.gov/dbpp/"><IMG alt=[DBPP] 
+src="7_8 Case Study Gaussian Elimination_files/asm_color_tiny.gif" 
+align=middle></A> <A href="http://www-unix.mcs.anl.gov/dbpp/text/node89.html" 
+name=tex2html3036><IMG alt=previous 
+src="7_8 Case Study Gaussian Elimination_files/previous_motif.gif" 
+align=middle></A> <A href="http://www-unix.mcs.anl.gov/dbpp/text/node91.html" 
+name=tex2html3044><IMG alt=next 
+src="7_8 Case Study Gaussian Elimination_files/next_motif.gif" align=middle></A> 
+<A href="http://www-unix.mcs.anl.gov/dbpp/text/node82.html" 
+name=tex2html3042><IMG alt=up 
+src="7_8 Case Study Gaussian Elimination_files/up_motif.gif" align=middle></A> 
+<A href="http://www-unix.mcs.anl.gov/dbpp/text/node1.html" 
+name=tex2html3046><IMG alt=contents 
+src="7_8 Case Study Gaussian Elimination_files/contents_motif.gif" 
+align=middle></A> <A href="http://www-unix.mcs.anl.gov/dbpp/text/node133.html" 
+name=tex2html3047><IMG alt=index 
+src="7_8 Case Study Gaussian Elimination_files/index_motif.gif" 
+align=middle></A> <A href="http://www.mcs.anl.gov/dbpp/search.html"><IMG 
+alt=[Search] src="7_8 Case Study Gaussian Elimination_files/search_motif.gif" 
+align=middle></A> <BR><B>Next:</B> <A 
+href="http://www-unix.mcs.anl.gov/dbpp/text/node91.html" name=tex2html3045>7.9 
+Summary</A> <B>Up:</B> <A 
+href="http://www-unix.mcs.anl.gov/dbpp/text/node82.html" name=tex2html3043>7 
+High Performance Fortran</A> <B>Previous:</B> <A 
+href="http://www-unix.mcs.anl.gov/dbpp/text/node89.html" name=tex2html3037>7.7 
+Performance Issues</A> <BR>
+<HR>
+
+<P>
+<H1><A name=SECTION03480000000000000000>7.8 Case Study: Gaussian 
+Elimination</A></H1>
+<P><A name=sechpfgauss></A> 
+<P><A name=11497>&nbsp;</A> To further illustrate the use of HPF, we present a 
+slightly more <A name=11498>&nbsp;</A> complex example. The problem considered 
+is the Gaussian <A name=11499>&nbsp;</A> elimination method used to solve a 
+system of linear equations 
+<P><IMG alt="" src="7_8 Case Study Gaussian Elimination_files/img991.gif" 
+align=bottom border=0>
+<P>where <EM>A</EM> is a known matrix of size <EM>N</EM> <IMG alt="" 
+src="7_8 Case Study Gaussian Elimination_files/img992.gif" align=middle 
+border=0><EM> N</EM> , <EM>x</EM> is the required solution vector, and 
+<EM>b</EM> is a known vector of size <EM>N</EM> . This example is often used in 
+discussions of HPF as <A name=11508>&nbsp;</A> it shows the benefits of cyclic 
+distributions. The method proceeds in <A name=11509>&nbsp;</A> two stages: 
+<OL>
+  <LI><EM>Gaussian elimination.</EM> The original system of equations is reduced 
+  to an upper triangular form 
+  <P><IMG alt="" src="7_8 Case Study Gaussian Elimination_files/img993.gif" 
+  align=bottom border=0>
+  <P>where <EM>U</EM> is a matrix of size <EM>N</EM> <IMG alt="" 
+  src="7_8 Case Study Gaussian Elimination_files/img994.gif" align=middle 
+  border=0><EM> N</EM> in which all elements below the diagonal are zero, and 
+  diagonal elements have the value 1. 
+  <P></P>
+  <LI><EM>Back substitution.</EM> The new system of equations is solved to 
+  obtain the values of <EM>x</EM> . </LI></OL>
+<P>
+<P><A name=12102>&nbsp;</A><IMG alt="" 
+src="7_8 Case Study Gaussian Elimination_files/img995.gif" align=bottom 
+border=0> <BR><STRONG>Figure 7.10:</STRONG> <EM>The <EM>i</EM> th step of the 
+Gaussian elimination algorithm in which nonzero subdiagonal elements in column 
+<EM>i</EM> are eliminated by subtracting appropriate multiples of the pivot 
+row.</EM><A name=figgauss>&nbsp;</A><BR>
+<P>
+<P>The Gaussian elimination stage of the algorithm comprises <EM>N-1</EM> steps. 
+In the basic algorithm, the <EM>i</EM> th step eliminates nonzero subdiagonal 
+elements in column <EM>i</EM> by subtracting the <EM>i</EM> th row from each row 
+<EM>j</EM> in the range <EM>[i+1,n]</EM> , in each case scaling the <EM>i</EM> 
+th row by the factor <IMG alt="" 
+src="7_8 Case Study Gaussian Elimination_files/img996.gif" align=middle 
+border=0> so as to make the element <IMG alt="" 
+src="7_8 Case Study Gaussian Elimination_files/img997.gif" align=middle 
+border=0> zero. Hence, the algorithm sweeps down the matrix from the top left 
+corner to the bottom right corner, leaving zero subdiagonal elements behind it 
+(Figure <A 
+href="http://www-unix.mcs.anl.gov/dbpp/text/node90.html#figgauss">7.10</A>). 
+<P>For numerical stability, this basic algorithm is modified so that instead of 
+stepping through rows in order, it selects in step <EM>i</EM> the row in the 
+range <EM>[i,n]</EM> with the largest element in column <EM>i</EM> . This row 
+(called the <EM>pivot </EM>) is swapped with row <EM>i</EM> prior to performing 
+the subtractions. 
+<P>Program <A 
+href="http://www-unix.mcs.anl.gov/dbpp/text/node90.html#proghpfgauss">7.7</A> is 
+an HPF implementation of this algorithm. For efficiency, this program maintains 
+the vector <EM>b</EM> in the <EM>N+1</EM> th column of the array <EM>A</EM> . 
+The first do-loop implements Gaussian elimination. The <TT>MAXLOC</TT> intrinsic 
+is used to identify the pivot row. Rather than performing an explicit swap with 
+row <EM>i</EM> , an indirection array called <TT>indx</TT> is used to keep track 
+of the actual indices of selected rows. This array is updated once the pivot is 
+identified. The next statement computes the <TT>N</TT> scale factors; notice 
+that the computation can be performed with a single array <A 
+name=11548>&nbsp;</A> assignment. Finally, the <TT>FORALL</TT> statement 
+performs the subtractions. The mask ensures that the subtraction is performed 
+only for rows that have not been previously selected as pivots (<TT> 
+Indx(j).EQ.0</TT>). Once the do-loop is complete, a second <TT>FORALL</TT> is 
+used to reorganize the matrix into upper triangular form. 
+<P>The last four lines of the program perform the back substitution. In reverse 
+order from <EM>N</EM> to 1, each element <IMG alt="" 
+src="7_8 Case Study Gaussian Elimination_files/img998.gif" align=middle 
+border=0> of the solution is computed and then substituted into <EM>A</EM> to 
+simplify the matrix. 
+<P>
+<P><A name=proghpfgauss>&nbsp;</A><IMG alt="" 
+src="7_8 Case Study Gaussian Elimination_files/img999.gif" align=bottom 
+border=0>
+<P>
+<P><A name=11584></A> 
+<P><A name=12150>&nbsp;</A><IMG alt="" 
+src="7_8 Case Study Gaussian Elimination_files/img1000.gif" align=bottom 
+border=0> <BR><STRONG>Figure 7.11:</STRONG> <EM>Communication and computation in 
+the various phases of the HPF Gaussian elimination algorithm. Arrows represent 
+communication, and shading indicates tasks involved in computation in each 
+phase. The five phases are described in Section 7.8.</EM><A 
+name=fighpfgauss2>&nbsp;</A><BR>
+<P>
+<P>Before developing data distribution directives for this program, let us 
+determine how much concurrency it exposes and what data dependencies may lead to 
+communication. We can think of the data-parallel program as specifying a 
+fine-grained partition comprising <EM>N</EM> <IMG alt="" 
+src="7_8 Case Study Gaussian Elimination_files/img1001.gif" align=middle 
+border=0><EM> N</EM> tasks, each responsible for a single element of <EM>A</EM> 
+. (These tasks characterize the computation that would be <A 
+name=11591>&nbsp;</A> associated with data elements by the owner-computes rule.) 
+As illustrated in Figure <A 
+href="http://www-unix.mcs.anl.gov/dbpp/text/node90.html#fighpfgauss2">7.11</A>, 
+each of the <EM>N-1</EM> steps of the elimination algorithm involves five 
+principal steps, as follows: 
+<OL>
+  <LI>The <TT>MAXLOC</TT> statement involves a reduction operation by the 
+  <EM>N</EM> tasks in the <EM>i</EM> th column. 
+  <P></P>
+  <LI>The maximum value identified by the reduction (<TT> max_indx</TT>) must be 
+  broadcast within the <EM>i</EM> th column, since it is required for the 
+  computation of scale factors. 
+  <P></P>
+  <LI>The computation of scale factors (the array <TT>Fac</TT>) requires 
+  <EM>N</EM> independent operations, one in each task in the <EM>i</EM> th 
+  column. 
+  <P></P>
+  <LI>A scale factor (<TT> Fac(j)</TT>) and a pivot row value (<TT> Row(k)</TT>) 
+  must be broadcast within each column and row, respectively, since they are 
+  required for the update. 
+  <P></P>
+  <LI>The <TT>FORALL</TT> statement involves <IMG alt="" 
+  src="7_8 Case Study Gaussian Elimination_files/img1002.gif" align=middle 
+  border=0> independent operations, one per task. </LI></OL>
+<P>Studying this algorithm, we see that it has two interesting <A 
+name=11607>&nbsp;</A> attributes. First, there is little locality in 
+communication beyond the fact that broadcasts and reductions are performed in 
+rows and columns. Second, computation tends to be clustered: in each step, much 
+of the computation is performed by tasks in a single row and column (before the 
+<TT>FORALL</TT>) and in the bottom right-hand corner (the <TT>FORALL</TT>). 
+These attributes can be exploited when developing data distribution directives 
+to complete the parallel algorithm. 
+<P>In many grid-based problems, we prefer to use a <TT>BLOCK</TT> distribution 
+of the principal data structures because it reduces communication requirements 
+by enhancing locality. However, in the Gaussian elimination problem, a 
+<TT>BLOCK</TT> distribution has no communication advantages; furthermore, it 
+causes many processors to be idle, particularly in the later stages of 
+computation. In contrast, a <TT>CYCLIC</TT> distribution scatters computation 
+over many processors and hence reduces idle time. Therefore, we could use the 
+following data distribution directives. 
+<P><PRE>        !HPF$  ALIGN Row(j) WITH A(1,j)
+        !HPF$  ALIGN X(i) WITH A(i,N+1)
+        !HPF$  DISTRIBUTE A(*,CYCLIC)
+</PRE>
+<P>Of course, the number of processors that can be used efficiently by this 
+one-dimensional decomposition is limited. An alternative formulation, more 
+efficient on large numbers of processors, decomposes <TT>A</TT> in two 
+dimensions. This can be specified as follows. 
+<P><PRE>        !HPF$  ALIGN Row(j) WITH A(1,j)
+        !HPF$  ALIGN X(i) WITH A(i,N+1)
+        !HPF$  DISTRIBUTE A(CYCLIC,CYCLIC)
+</PRE>
+<P><BR>
+<HR>
+<A href="http://www-unix.mcs.anl.gov/dbpp/"><IMG alt=[DBPP] 
+src="7_8 Case Study Gaussian Elimination_files/asm_color_tiny.gif" 
+align=middle></A> <A href="http://www-unix.mcs.anl.gov/dbpp/text/node89.html" 
+name=tex2html3036><IMG alt=previous 
+src="7_8 Case Study Gaussian Elimination_files/previous_motif.gif" 
+align=middle></A> <A href="http://www-unix.mcs.anl.gov/dbpp/text/node91.html" 
+name=tex2html3044><IMG alt=next 
+src="7_8 Case Study Gaussian Elimination_files/next_motif.gif" align=middle></A> 
+<A href="http://www-unix.mcs.anl.gov/dbpp/text/node82.html" 
+name=tex2html3042><IMG alt=up 
+src="7_8 Case Study Gaussian Elimination_files/up_motif.gif" align=middle></A> 
+<A href="http://www-unix.mcs.anl.gov/dbpp/text/node1.html" 
+name=tex2html3046><IMG alt=contents 
+src="7_8 Case Study Gaussian Elimination_files/contents_motif.gif" 
+align=middle></A> <A href="http://www-unix.mcs.anl.gov/dbpp/text/node133.html" 
+name=tex2html3047><IMG alt=index 
+src="7_8 Case Study Gaussian Elimination_files/index_motif.gif" 
+align=middle></A> <A href="http://www.mcs.anl.gov/dbpp/search.html"><IMG 
+alt=[Search] src="7_8 Case Study Gaussian Elimination_files/search_motif.gif" 
+align=middle></A> <BR><B>Next:</B> <A 
+href="http://www-unix.mcs.anl.gov/dbpp/text/node91.html" name=tex2html3045>7.9 
+Summary</A> <B>Up:</B> <A 
+href="http://www-unix.mcs.anl.gov/dbpp/text/node82.html" name=tex2html3043>7 
+High Performance Fortran</A> <B>Previous:</B> <A 
+href="http://www-unix.mcs.anl.gov/dbpp/text/node89.html" name=tex2html3037>7.7 
+Performance Issues</A> <BR>
+<HR>
+
+<P>
+<P>
+<ADDRESS><I>© Copyright 1995 by <A 
+href="http://www.mcs.anl.gov/people/foster/">Ian Foster</A></I> 
+</ADDRESS></BODY></HTML>

@@ -1,0 +1,310 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0054)http://en2.wikipedia.org/wiki/Gauss-Jordan_elimination -->
+<HTML lang=en><HEAD><TITLE>Gaussian elimination - Wikipedia</TITLE>
+<META http-equiv=Content-type content="text/html; charset=iso-8859-1">
+<META content=index,follow name=robots><LINK href="/favicon.ico" 
+rel="shortcut icon"><LINK 
+href="Gaussian elimination - Wikipedia_files/wikistandard.css" rel=stylesheet>
+<SCRIPT src="Gaussian elimination - Wikipedia_files/wikibits.js" 
+type=text/javascript></SCRIPT>
+
+<STYLE type=text/css>A.new {
+	COLOR: #cc2200
+}
+#quickbar A.new {
+	COLOR: #cc2200
+}
+#quickbar {
+	BORDER-RIGHT: gray 1px solid; LEFT: 4px; POSITION: absolute; TOP: 4px
+}
+#article {
+	MARGIN-LEFT: 152px; MARGIN-RIGHT: 4px
+}
+</STYLE>
+
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR></HEAD>
+<BODY bgColor=#ffffff>
+<DIV id=content>
+<DIV id=topbar>
+<TABLE cellSpacing=0 width="98%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=152 rowSpan=2>&nbsp;</TD>
+    <TD vAlign=top align=left><A title="Main Page" 
+      href="http://en2.wikipedia.org/wiki/Main_Page">Main Page</A> | <A 
+      title=Special:Recentchanges 
+      href="http://en2.wikipedia.org/wiki/Special:Recentchanges">Recent 
+      changes</A> | <A title="Gaussian elimination" 
+      href="http://en2.wikipedia.org/w/wiki.phtml?title=Gaussian_elimination&amp;action=edit">Edit 
+      this page</A> | <A title="Gaussian elimination" 
+      href="http://en2.wikipedia.org/w/wiki.phtml?title=Gaussian_elimination&amp;action=history">Page 
+      history</A>
+      <P class=subtitle><A title="Gaussian elimination" 
+      href="http://en2.wikipedia.org/w/wiki.phtml?title=Gaussian_elimination&amp;printable=yes">Printable 
+      version</A></P></TD>
+    <TD vAlign=top noWrap align=right>Not logged in <BR><A 
+      title=Special:Userlogin 
+      href="http://en2.wikipedia.org/w/wiki.phtml?title=Special:Userlogin&amp;returnto=Gaussian_elimination">Log 
+      in</A> | <A title=Wikipedia:Help 
+      href="http://en2.wikipedia.org/wiki/Wikipedia:Help">Help</A> <BR>
+      <FORM class=inline name=search action=/w/wiki.phtml method=get><INPUT 
+      size=19 name=search> <INPUT type=submit value=Go name=go>&nbsp;<INPUT type=submit value=Search></FORM></TD></TR>
+  <TR>
+    <TD class=top colSpan=2>Other languages: <A class=external title=ja: 
+      href="http://ja.wikipedia.org/wiki/ã&#130;¬ã&#130;¦ã&#130;¹ã®æ¶&#136;å&#142;»æ³&#149;">&#26085;&#26412;&#35486; 
+    (Nihongo)</A></TD></TR></TBODY></TABLE></DIV>
+<DIV id=article>
+<H1 class=pagetitle>Gaussian elimination</H1>
+<P class=subtitle>(Redirected from <A title="Gauss-Jordan elimination" 
+href="http://en2.wikipedia.org/w/wiki.phtml?title=Gauss-Jordan_elimination&amp;redirect=no">Gauss-Jordan 
+elimination</A>) 
+<P>
+<P><STRONG>Gaussian elimination</STRONG> is an algorithm in <A 
+title="Linear algebra" 
+href="http://en2.wikipedia.org/wiki/Linear_algebra">linear algebra</A> for 
+determining the solutions of a <A title="System of linear equations" 
+href="http://en2.wikipedia.org/wiki/System_of_linear_equations">system of linear 
+equations</A>, for determining the <A title="Rank of a matrix" 
+href="http://en2.wikipedia.org/wiki/Rank_of_a_matrix">rank</A> of a <A 
+title=Matrix href="http://en2.wikipedia.org/wiki/Matrix">matrix</A>, and for <A 
+title="Matrix inversion" 
+href="http://en2.wikipedia.org/wiki/Matrix_inversion">calculating the 
+inverse</A> of an invertible square matrix. 
+<P>The method is named after the <A title=Mathematician 
+href="http://en2.wikipedia.org/wiki/Mathematician">mathematician</A> <A 
+title="Carl Friedrich Gauss" 
+href="http://en2.wikipedia.org/wiki/Carl_Friedrich_Gauss">Carl Friedrich 
+Gauss</A>, but the method is described by <A title="Liu Hui" 
+href="http://en2.wikipedia.org/wiki/Liu_Hui">Liu Hui</A>'s comments written in 
+<A title=263 href="http://en2.wikipedia.org/wiki/263">263</A> A.D. to the 
+Chinese book <EM>Jiuzhang suanshu</EM> or <EM><A 
+title="The Nine Chapters on the Mathematical Art" 
+href="http://en2.wikipedia.org/wiki/The_Nine_Chapters_on_the_Mathematical_Art">The 
+Nine Chapters on the Mathematical Art</A></EM>. 
+<P>The <A title="Computational complexity theory" 
+href="http://en2.wikipedia.org/wiki/Computational_complexity_theory">computation 
+complexity</A> of Gaussian elimination is <A title="Big O notation" 
+href="http://en2.wikipedia.org/wiki/Big_O_notation">O(<EM>n</EM><SUP>3</SUP>)</A>, 
+that is, the number of operations required is <A title=Proportional 
+href="http://en2.wikipedia.org/wiki/Proportional">proportional</A> to 
+<EM>n</EM><SUP>3</SUP> if the matrix size is <EM>n</EM>-by-<EM>n</EM>. 
+<P>
+<H2><A name=Systems_of_linear_equations>Systems of linear equations 
+</A></H2>Suppose you need to find numbers <EM>x1</EM>, <EM>x2</EM> and 
+<EM>x3</EM> such that the following three equations are all true: 
+<DL>
+  <DD>&nbsp;&nbsp;2<EM>x1</EM> + 4<EM>x2</EM> + &nbsp;2<EM>x3</EM> = 15 
+  <DD>2<EM>x1</EM> +<EM>x2</EM> + 2<EM>x3</EM> = -5 
+  <DD>4<EM>x1</EM> + <EM>x2</EM> - 2<EM>x3</EM> = 0 </DD></DL>This is called a 
+<EM>system of linear equations</EM> for the unknowns <EM>x1</EM>, <EM>x2</EM> 
+and <EM>x3</EM>. The goal is to transform this system to an equivalent one so 
+that we can easily read off the solution. The allowed operations to transform a 
+system of equations to an equivalent one are as follows: 
+<UL>
+  <LI>multiply/divide an equation by a non-zero number 
+  <LI>switch two equations 
+  <LI>add a multiple of one equation to another one </LI></UL>The strategy is as 
+follows: eliminate <EM>x1</EM> from all but the first equation, eliminate 
+<EM>x2</EM> from all but the second equation, and then eliminate <EM>x3</EM> 
+from all but the third equation. 
+<P>In our example, we eliminate <EM>x1</EM> from the second equation by adding 
+3/2 times the first equation to the second, and then we eliminate <EM>x1</EM> 
+from the third equation by adding the first equation to the third. The result 
+is: 
+<DL>
+  <DD>2<EM>x</EM> + &nbsp;<EM>y</EM>&nbsp; - &nbsp;<EM>z</EM> = 8 
+  <DD>&nbsp;&nbsp;&nbsp;&nbsp;.5<EM>y</EM> + .5<EM>z</EM> = 1 
+  <DD>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2<EM>y</EM> + &nbsp;<EM>z</EM> = 5 
+</DD></DL>Now we eliminate <EM>y</EM> from the first equation by adding -2 times 
+the second equation to the first, and then we eliminate <EM>y</EM> from the 
+third equation by adding -4 times the second equation to the third: 
+<DL>
+  <DD>2<EM>x</EM> &nbsp;&nbsp;&nbsp; - 2<EM>z</EM> = 6 
+  <DD>&nbsp;&nbsp;&nbsp;.5<EM>y</EM> + .5<EM>z</EM> = 1 
+  <DD>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - <EM>z</EM> = 1 
+</DD></DL>Finally, we eliminate <EM>z</EM> from the first equation by adding -2 
+times the third equation to the first, and then we eliminate <EM>z</EM> from the 
+second equation by adding .5 times the third equation to the second: 
+<DL>
+  <DD>2<EM>x</EM> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; = 4 
+  <DD>&nbsp;&nbsp;&nbsp;.5<EM>y</EM> &nbsp;&nbsp;&nbsp; = 1.5 
+  <DD>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; - <EM>z</EM> = 1 </DD></DL>We can read 
+off the solution: <EM>x</EM> = 2, <EM>y</EM> = 3 and <EM>z</EM> = -1. 
+<P>This algorithm works generally, also for bigger systems. Sometimes it is 
+necessary to switch two equations: for instance if <EM>y</EM> hadn't occurred in 
+the second equation after our first step above, we would have switched the 
+second and third equation and then eliminated <EM>y</EM> from the first 
+equation. It is possible that the algorithm gets "stuck": for instance if 
+<EM>y</EM> hadn't occurred in the second and the third equation after our first 
+step above. In this case, the system doesn't have a unique solution. 
+<P>When implemented on a computer, one would typically store the system as a 
+coefficient <A title="Matrix (mathematics)" 
+href="http://en2.wikipedia.org/wiki/Matrix_(mathematics)">matrix</A>; our 
+original system would then look like 
+<P><IMG 
+alt="&#13;&#10;\begin{pmatrix}&#13;&#10;2 &amp; 1 &amp; -1 &amp; 8 \\&#13;&#10;-3 &amp; -1 &amp; 2 &amp; -11 \\&#13;&#10;-2 &amp; 1 &amp; 2 &amp; -3&#13;&#10;\end{pmatrix}&#13;&#10;" 
+src="Gaussian elimination - Wikipedia_files/7d5856c8c233cce225a8af374c65c8af.png"> 
+
+<P>and in the end we're left with 
+<P><IMG 
+alt="&#13;&#10;\begin{pmatrix}&#13;&#10;2 &amp; 0 &amp; 0 &amp; 4 \\&#13;&#10;0 &amp; .5 &amp; 0 &amp; 1.5 \\&#13;&#10;0 &amp; 0 &amp; -1 &amp; 1&#13;&#10;\end{pmatrix}&#13;&#10;" 
+src="Gaussian elimination - Wikipedia_files/5f0db70f12cb67f69742190d62636f1c.png"> 
+
+<P>or, after dividing the rows by 2, .5 and -1, respectively: 
+<P><IMG 
+alt="&#13;&#10;\begin{pmatrix}&#13;&#10;1 &amp; 0 &amp; 0 &amp; 2 \\&#13;&#10;0 &amp; 1 &amp; 0 &amp; 3 \\&#13;&#10;0 &amp; 0 &amp; 1 &amp; -1&#13;&#10;\end{pmatrix}&#13;&#10;" 
+src="Gaussian elimination - Wikipedia_files/86631e1a3e32d16f1caf3b98889f4545.png"> 
+
+<P>This algorithm can be used on a computer for systems with thousands of 
+equations and unknowns. For even larger systems whose coefficients follow a 
+regular pattern, faster iterative methods have been developed. See <A 
+title="System of linear equations" 
+href="http://en2.wikipedia.org/wiki/System_of_linear_equations">system of linear 
+equations</A>. 
+<P>
+<H2><A name=Finding_the_inverse_of_a_matrix>Finding the inverse of a matrix 
+</A></H2>
+<P>Suppose <EM>A</EM> is a square <EM>n</EM>-by-<EM>n</EM> matrix and you need 
+to calculate its <A title="Matrix inversion" 
+href="http://en2.wikipedia.org/wiki/Matrix_inversion">inverse</A>. You attach 
+the <EM>n</EM>-by-<EM>n</EM> identity matrix to the right of <EM>A</EM>, which 
+produces an <EM>n</EM>-by-2<EM>n</EM> matrix. Then you start the Gauss-Jordan 
+algorithm on that matrix. When the algorithm finishes, the identity matrix will 
+appear on the left; the inverse of <EM>A</EM> can then be found to the right of 
+the identity matrix. 
+<P>If the algorithm gets "stuck" as explained above, then <EM>A</EM> is not 
+invertible. 
+<P>In practice, inverting a matrix is rarely required. Most of the time, one is 
+really after the solution of a particular system of linear equations. 
+<P>
+<H3><A name=The_general_algorithm_to_compute_ranks_and_bases>The general 
+algorithm to compute ranks and bases </A></H3>
+<P>
+<P>The Gaussian elimination algorithm can be applied to any 
+<EM>m</EM>-by-<EM>n</EM> matrix <EM>A</EM>. If we get "stuck" in a given column, 
+we move to the next column. In this way, for example, any 6x9 matrix can be 
+transformed to a matrix that has a <EM>reduced row echelon form</EM> like 
+<P><IMG 
+alt="&#13;&#10;\begin{pmatrix}&#13;&#10;1 &amp; * &amp; 0 &amp; 0 &amp; * &amp; * &amp; 0 &amp; * &amp; 0 \\&#13;&#10;0 &amp; 0 &amp; 1 &amp; 0 &amp; * &amp; * &amp; 0 &amp; * &amp; 0 \\&#13;&#10;0 &amp; 0 &amp; 0 &amp; 1 &amp; * &amp; * &amp; 0 &amp; * &amp; 0 \\ &#13;&#10;0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; * &amp; 0 \\ &#13;&#10;0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 1 \\ &#13;&#10;0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &#13;&#10;\end{pmatrix}&#13;&#10;" 
+src="Gaussian elimination - Wikipedia_files/bf024e562f516e6aea195bc3688618d5.png"> 
+
+<P>(the *s are arbitrary entries). Note that the entries above and below and in 
+front of the leading ones are all zero. This echelon matrix <EM>T</EM> contains 
+a wealth of information about <EM>A</EM>: the <A title="Rank of a matrix" 
+href="http://en2.wikipedia.org/wiki/Rank_of_a_matrix">rank</A> of <EM>A</EM> is 
+5 since there are 5 non-zero rows in <EM>T</EM>; the vectorspace spanned by the 
+rows of <EM>A</EM> has as basis the first, third, forth, seventh and ninth 
+column of <EM>A</EM> (the rows of the ones in <EM>T</EM>), and the *'s tell you 
+how the other rows of <EM>A</EM> can be written as linear combinations of the 
+basis rows. 
+<P>The Gaussian elimination can be performed over any <A title=Field 
+href="http://en2.wikipedia.org/wiki/Field">field</A>. The three basic operations 
+used in the Gaussian elimination (multiplying rows, switching rows, and adding 
+multiples of rows to other rows) amount to multiplying the original matrix 
+<EM>A</EM> with invertible <EM>m</EM>-by-<EM>m</EM> matrices from the left. In 
+general, we can say: 
+<DL>
+  <DD>To every <EM>m</EM>-by-<EM>n</EM> matrix <EM>A</EM> over the field 
+  <EM>K</EM> there exists a uniquely determined invertible 
+  <EM>m</EM>-by-<EM>m</EM> matrix <EM>S</EM> and a uniquely determined reduced 
+  row echelon matrix <EM>T</EM> such that <EM>A</EM> = <EM>ST</EM>. </DD></DL>
+<P>The formal algorithm to compute <EM>T</EM> from <EM>A</EM> follows. We write 
+<EM>A</EM>[<EM>i</EM>,<EM>j</EM>] for the entry in row <EM>i</EM>, column 
+<EM>j</EM> in matrix <EM>A</EM>. The transformation is performed "in place", 
+meaning that the original matrix <EM>A</EM> is lost and successively replaced by 
+<EM>T</EM>. <PRE>i=1
+j=1
+while (i &lt;= m and j&lt;= n) do
+  # Find pivot in column j, starting in row i:
+  max_val = abs(A[i,j])
+  max_ind = i
+  for k=i+1 to m do
+    if abs(A[k,j]) &gt; max_val then
+      max_val = abs(A[k,j])
+      max_ind = k
+    end_if
+  end_for
+  if max_val &lt;&gt; 0 then
+    switch rows i and max_ind
+    divide row i by max_val
+    for u = i+1 to m do
+      add - A[u,j] * row i to row u
+    end_for
+    i = i + 1
+  end_if
+  j = j + 1
+end_while
+</PRE>
+<P>This algorithm differs slightly from the one discussed earlier, because 
+before eliminating a variable, it first exchanges rows to move the entry with 
+the largest absolute value to the "pivot position". Such a pivoting procedure 
+improves the numerical stability of the algorithm; some variants are also in 
+use. 
+<P>Note that if the field is the real or complex numbers and <A 
+title="Floating point" 
+href="http://en2.wikipedia.org/wiki/Floating_point">floating point</A> 
+arithmetic is in use, the comparison "max_val &lt;&gt; 0" should be exchanged by 
+"max_val &gt; eps" for some small, machine-dependent constant eps, since it is 
+never correct to compare floating point numbers to zero. 
+<P></P></DIV><BR clear=all>
+<DIV id=footer>
+<TABLE cellSpacing=0 width="98%" border=0>
+  <TBODY>
+  <TR>
+    <TD width=152>&nbsp;</TD>
+    <TD class=bottom vAlign=top align=left><STRONG><A 
+      title="Gaussian elimination" 
+      href="http://en2.wikipedia.org/w/wiki.phtml?title=Gaussian_elimination&amp;action=edit">Edit 
+      this page</A></STRONG> | <A title="Talk:Gaussian elimination" 
+      href="http://en2.wikipedia.org/wiki/Talk:Gaussian_elimination">Discuss 
+      this page</A> | <A title="Gaussian elimination" 
+      href="http://en2.wikipedia.org/w/wiki.phtml?title=Gaussian_elimination&amp;action=history">Page 
+      history</A> | <A title=Special:Whatlinkshere 
+      href="http://en2.wikipedia.org/w/wiki.phtml?title=Special:Whatlinkshere&amp;target=Gaussian_elimination">What 
+      links here</A> | <A title=Special:Recentchangeslinked 
+      href="http://en2.wikipedia.org/w/wiki.phtml?title=Special:Recentchangeslinked&amp;target=Gaussian_elimination">Related 
+      changes</A><BR>Other languages: <A class=external title=ja: 
+      href="http://ja.wikipedia.org/wiki/ã&#130;¬ã&#130;¦ã&#130;¹ã®æ¶&#136;å&#142;»æ³&#149;">&#26085;&#26412;&#35486; 
+      (Nihongo)</A> <BR><A title="Main Page" 
+      href="http://en2.wikipedia.org/wiki/Main_Page">Main Page</A> | <A 
+      title=Wikipedia:About 
+      href="http://en2.wikipedia.org/wiki/Wikipedia:About">About Wikipedia</A> | 
+      <A title=Special:Recentchanges 
+      href="http://en2.wikipedia.org/wiki/Special:Recentchanges">Recent 
+      changes</A> | 
+      <FORM class=inline name=search action=/w/wiki.phtml method=get><INPUT 
+      size=19 name=search> <INPUT type=submit value=Go name=go>&nbsp;<INPUT type=submit value=Search></FORM><BR><SPAN 
+      id=pagestats>This page was last modified 13:28, 21 Oct 2003. All text is 
+      available under the terms of the <A class=internal 
+      href="http://en2.wikipedia.org/wiki/GNU_FDL">GNU Free Documentation 
+      License</A>.</SPAN></TD></TR></TBODY></TABLE></DIV></DIV>
+<DIV id=quickbar><A href="http://en2.wikipedia.org/wiki/Main+Page"><IMG 
+alt="[Main Page]" src="Gaussian elimination - Wikipedia_files/wiki.png" 
+border=0></A> 
+<HR class=sep>
+<A title="Main Page" href="http://en2.wikipedia.org/wiki/Main_Page">Main 
+Page</A> <BR><A title=Special:Recentchanges 
+href="http://en2.wikipedia.org/wiki/Special:Recentchanges">Recent changes</A> 
+<BR><A title=Special:Randompage 
+href="http://en2.wikipedia.org/wiki/Special:Randompage">Random page</A> <BR><A 
+title="Current events" 
+href="http://en2.wikipedia.org/wiki/Current_events">Current events</A> <BR>
+<HR class=sep>
+<STRONG><A title="Gaussian elimination" 
+href="http://en2.wikipedia.org/w/wiki.phtml?title=Gaussian_elimination&amp;action=edit">Edit 
+this page</A></STRONG> <BR><A title="Talk:Gaussian elimination" 
+href="http://en2.wikipedia.org/wiki/Talk:Gaussian_elimination">Discuss this 
+page</A> <BR><A title="Gaussian elimination" 
+href="http://en2.wikipedia.org/w/wiki.phtml?title=Gaussian_elimination&amp;action=history">Page 
+history</A> <BR><A title=Special:Whatlinkshere 
+href="http://en2.wikipedia.org/w/wiki.phtml?title=Special:Whatlinkshere&amp;target=Gaussian_elimination">What 
+links here</A> <BR><A title=Special:Recentchangeslinked 
+href="http://en2.wikipedia.org/w/wiki.phtml?title=Special:Recentchangeslinked&amp;target=Gaussian_elimination">Related 
+changes</A> <BR>
+<HR class=sep>
+<A title=Special:Specialpages 
+href="http://en2.wikipedia.org/wiki/Special:Specialpages">Special pages</A> 
+<BR><A title="Wikipedia:Bug reports" 
+href="http://en2.wikipedia.org/wiki/Wikipedia:Bug_reports">Bug reports</A> 
+<BR><A href="http://wikimediafoundation.org/fundraising">Donations</A> 
+<BR></DIV><!-- Time since request: 0.07 secs. --></BODY></HTML>

@@ -1,0 +1,9 @@
+General_mod = 89, 117, 652, 601, 
+frmMain = 89, 117, 652, 601, , 105, 73, 670, 559, C
+frmSplash = 36, 140, 601, 626, C, 132, 174, 697, 660, C
+frmAbout = 66, 87, 631, 573, C, 0, 0, 565, 486, C
+frmDocument = 21, 126, 709, 579, Z, 23, 30, 586, 514, C
+percent = 154, 203, 691, 689, C, 66, 87, 589, 573, C
+frm_temperature_chart = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+frm_add_new_material = 0, 0, 0, 0, C, 0, 0, 0, 0, C
+core = 0, 0, 0, 0, C
