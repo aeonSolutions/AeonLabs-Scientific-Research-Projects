@@ -4,6 +4,7 @@ This repo contains all software solutions coded while as a scientific researcher
 
 ![](https://views.whatilearened.today/views/github/aeonSolutions/AeonLabs-Scientific-Research-Projects.svg)
 ![](https://img.shields.io/github/downloads/aeonSolutions/AeonLabs-Scientific-Research-Projects/total?style=for-the-badge)
+[![CodeFactor](https://www.codefactor.io/repository/github/aeonsolutions/aeonlabs-scientific-research-projects/badge)](https://www.codefactor.io/repository/github/aeonsolutions/aeonlabs-scientific-research-projects)
 
 ## Join the WhatsApp Group
 If you like this kind of projects and want to stay updated with the latest research ideas and prototypes during the day and week, join the WhatsApp Group
