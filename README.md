@@ -6,15 +6,13 @@
 [![GitHub Forks](https://img.shields.io/github/forks/aeonSolutions/PCB-Prototyping-Catalogue.svg?style=social&label=Fork&maxAge=2592000)](https://www.github.com/aeonSolutions/PCB-Prototyping-Catalogue/fork)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat&label=Contributions&colorA=red&colorB=black	)](#)
 [<img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" data-canonical-src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="30" />](https://www.buymeacoffee.com/migueltomas)
+![](https://views.whatilearened.today/views/github/aeonSolutions/AeonLabs-Scientific-Research-Projects.svg)
 
 <br />
 
 # Scientific Research Projects
 This repo contains all software solutions coded while as a scientific researcher at Univserity of Minho (Portugal). 
 
-
-![](https://views.whatilearened.today/views/github/aeonSolutions/AeonLabs-Scientific-Research-Projects.svg)
-![](https://img.shields.io/github/downloads/aeonSolutions/AeonLabs-Scientific-Research-Projects/total?style=for-the-badge)
 [![CodeFactor](https://www.codefactor.io/repository/github/aeonsolutions/aeonlabs-scientific-research-projects/badge)](https://www.codefactor.io/repository/github/aeonsolutions/aeonlabs-scientific-research-projects)
 
 ## Join the WhatsApp Group
