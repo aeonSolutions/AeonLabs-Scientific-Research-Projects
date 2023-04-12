@@ -11,7 +11,7 @@
 <br />
 
 # Scientific Research Projects
-This repo contains all software solutions coded while as a scientific researcher at Univserity of Minho (Portugal). 
+This repo contains all software solutions coded while as a scientific researcher at University of Minho (Portugal). 
 
 [![CodeFactor](https://www.codefactor.io/repository/github/aeonsolutions/aeonlabs-scientific-research-projects/badge)](https://www.codefactor.io/repository/github/aeonsolutions/aeonlabs-scientific-research-projects)
 
