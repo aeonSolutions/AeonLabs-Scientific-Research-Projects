@@ -31,7 +31,7 @@ The ECOBuild folder contains the software (Visual Basic 6) utiized on the resear
 
 
 <p align="center">
-  <img src="https://github.com/aeonSolutions/AeonLabs-Scientific-Research-Projects/blob/master/duracon.png"> &nbsp;
+  <img src="https://github.com/aeonSolutions/AeonLabs-Scientific-Research-Projects/blob/master/ecobuild.png"> &nbsp;
 </p>
 
 <br>
