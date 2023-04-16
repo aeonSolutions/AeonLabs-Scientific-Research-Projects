@@ -57,7 +57,8 @@ Statistical analysis of fracturing of thin coatings on a substrate, an implement
 ■ **Modulus**
 
 <p align="center">
-  <img src="https://github.com/aeonSolutions/AeonLabs-Scientific-Research-Projects/blob/master/Modulus/4point%20bending.png" width=450>
+  <img src="https://github.com/aeonSolutions/AeonLabs-Scientific-Research-Projects/blob/master/Modulus/4point%20bending.png"> &nbsp;
+ <img src="https://github.com/aeonSolutions/AeonLabs-Scientific-Research-Projects/blob/master/Modulus/secoes.png">
 </p>
  
 <br>
