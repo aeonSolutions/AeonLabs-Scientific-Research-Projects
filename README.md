@@ -40,6 +40,7 @@ The "Expert Automation Files" folder contains a collection of Excel workbooks re
 <br>
 
 ■ **FissurMax**
+
 Statistical analysis of the state of tension on 4-point bending of thin multi-layered samples, implementation to ongoing research in the Physics Department.  
 
 <br>
