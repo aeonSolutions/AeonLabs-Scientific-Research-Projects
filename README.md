@@ -15,6 +15,11 @@
 # Software for Scientific Research
 This repo contains all software solutions coded while as a scientific researcher at University of Minho (Portugal). 
 
+■ Duraon - Service Life of Reinforced Concrete Structures
+The Duracon folder contains the software code for the Duracon Software , part of the Scientific Research Project PTDC/ECM/69565/2006 entitled: "SELICON - Service life Design – Modelling the durability performance of concrete structures" where i worked as a researcher. 
+
+
+
 [![CodeFactor](https://www.codefactor.io/repository/github/aeonsolutions/aeonlabs-scientific-research-projects/badge)](https://www.codefactor.io/repository/github/aeonsolutions/aeonlabs-scientific-research-projects)
 
 ## Join the WhatsApp Group
