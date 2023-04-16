@@ -56,6 +56,8 @@ Statistical analysis of fracturing of thin coatings on a substrate, an implement
 
 ■ **Modulus**
 
+Estimates the a composite Eleastic modules comprised of several thin substrates
+
 <p align="center">
   <img src="https://github.com/aeonSolutions/AeonLabs-Scientific-Research-Projects/blob/master/Modulus/4point%20bending.png"> &nbsp;
  <img src="https://github.com/aeonSolutions/AeonLabs-Scientific-Research-Projects/blob/master/Modulus/secoes.png">
