@@ -19,6 +19,8 @@ This repo contains all software solutions coded while as a scientific researcher
 
 ■ **Duraon - Service Life of Reinforced Concrete Structures**
 
+**Project Total: ~30 work.h**
+
 The Duracon folder contains the software code (Visual Basic) for the Duracon Software , part of the Scientific Research Project PTDC/ECM/69565/2006 entitled: "SELICON - Service life Design – Modelling the durability performance of concrete structures" where i worked as a researcher. 
 
 <p align="center">
@@ -26,6 +28,8 @@ The Duracon folder contains the software code (Visual Basic) for the Duracon Sof
 </p>
 
 ■ **ECOBuild**
+
+**Project Total: ~240 work.h**
 
 The ECOBuild folder contains the software (Visual Basic 6) utiized on the research work "Life cycle assessment of steel and reinforced concrete structures: A new analysis tool" pulbished [here](https://www.scopus.com/record/display.uri?eid=2-s2.0-79961056746&origin=inward&txGid=25697f2975aa656e8ae0380d78171c55).
 
@@ -50,11 +54,15 @@ The "Expert Automation Files" folder contains a collection of Excel workbooks re
 
 ■ **FissurMax**
 
+**Project Total: ~300 work.h**
+
 Statistical analysis software code (Visual Basic 6) of the state of tension on 4-point bending of thin multi-layered samples, implementation to ongoing research in the Physics Department.  
 
 <br>
 
 ■ **FissurMix**
+
+**Project Total: ~300 work.h**
 
 Statistical analysis software code (Visual Basic 6) of fracturing of thin coatings on a substrate, an implementation from a research thesis in the Physics Department  
 
