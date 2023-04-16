@@ -21,7 +21,13 @@ This repo contains all software solutions coded while as a scientific researcher
 
 The Duracon folder contains the software code for the Duracon Software , part of the Scientific Research Project PTDC/ECM/69565/2006 entitled: "SELICON - Service life Design – Modelling the durability performance of concrete structures" where i worked as a researcher. 
 
+■ **ECOBuild**
 
+The ECOBuild folder contains the software utiized on the research work "Life cycle assessment of steel and reinforced concrete structures: A new analysis tool" pulbished [here](https://www.scopus.com/record/display.uri?eid=2-s2.0-79961056746&origin=inward&txGid=25697f2975aa656e8ae0380d78171c55).
+
+<br>
+
+■
 
 <br>
 
