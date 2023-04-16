@@ -27,8 +27,39 @@ The ECOBuild folder contains the software utiized on the research work "Life cyc
 
 <br>
 
-■
+■ **Expert Automation Files**
 
+The "Expert Automation Files" folder contains a collection of Excel workbooks related to Construction Building Materials , namely:
+
+- Calculation of a mortar compostion 
+- Sand Granulometry 
+- Geopolimers
+- Faury Method
+- Compressive Strnght 
+
+<br>
+
+■ **FissurMax**
+Statistical analysis of the state of tension on 4-point bending of thin multi-layered samples, implementation to ongoing research in the Physics Department.  
+
+<br>
+
+■ **FissurMix**
+
+Statistical analysis of fracturing of thin coatings on a substrate, an implementation from a research thesis in the Physics Department  
+
+<br>
+
+■ **Temperus**
+
+<br>
+
+■ **Modulus**
+
+<p align="center">
+  <img src="https://github.com/aeonSolutions/AeonLabs-Scientific-Research-Projects/blob/master/Modulus/4point%20bending.png" width=450>
+</p>
+ 
 <br>
 
 ## Join the WhatsApp Group
