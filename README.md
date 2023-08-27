@@ -17,7 +17,7 @@ This repo contains all software solutions coded while as a scientific researcher
 
 <br>
 
-■ **Durcaon - Service Life of Reinforced Concrete Structures**
+■ **Duracon - Service Life of Reinforced Concrete Structures**
 
 **Project Total: ~30 work.h**
 
