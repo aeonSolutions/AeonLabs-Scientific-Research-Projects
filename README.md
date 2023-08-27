@@ -48,7 +48,7 @@ The "Expert Automation Files" folder contains a collection of Excel workbooks re
 - Sand Granulometry 
 - Geopolimers
 - Faury Method
-- Compressive Strnght 
+- Compressive Strenght 
 
 <br>
 
