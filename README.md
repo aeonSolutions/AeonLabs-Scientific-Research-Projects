@@ -18,7 +18,7 @@ Last update 14-11-2023
 </div>
 
 # [![CodeFactor](https://www.codefactor.io/repository/github/aeonsolutions/aeonlabs-scientific-research-projects/badge)](https://www.codefactor.io/repository/github/aeonsolutions/aeonlabs-scientific-research-projects) Software for Scientific Research
-This repo contains all software solutions coded while as a scientific researcher at University of Minho (Portugal). 
+This repo contains all software solutions coded while I was a scientific researcher at the University of Minho (Portugal).  Also, visit my [Open Scientific Research Projects](https://github.com/aeonSolutions/Open-Scientific-Research) here on Github.
 
 <br>
 
@@ -26,7 +26,7 @@ This repo contains all software solutions coded while as a scientific researcher
 
 **Project Total: ~30 work.h**
 
-The Duracon folder contains the software code (Visual Basic) for the Duracon Software , part of the Scientific Research Project PTDC/ECM/69565/2006 entitled: "SELICON - Service life Design – Modelling the durability performance of concrete structures" where i worked as a researcher. 
+The Duracon folder contains the software code (Visual Basic) for the Duracon Software, part of the Scientific Research Project PTDC/ECM/69565/2006 entitled: "SELICON - Service life Design – Modelling the durability performance of concrete structures" where I worked as a researcher. 
 
 <p align="center">
   <img src="https://github.com/aeonSolutions/AeonLabs-Scientific-Research-Projects/blob/master/duracon.png"> &nbsp;
