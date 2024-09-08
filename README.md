@@ -13,11 +13,11 @@
 
 <div align="right">
 Goto <a href="https://github.com/aeonSolutions/Open-Scientific-Research">Open Science Research</a> <br>
-Last update 14-11-2023
+Last update 08-09-2024
 </div>
 
 # [![CodeFactor](https://www.codefactor.io/repository/github/aeonsolutions/aeonlabs-scientific-research-projects/badge)](https://www.codefactor.io/repository/github/aeonsolutions/aeonlabs-scientific-research-projects) Software for Scientific Research
-This repo contains all software solutions coded while I was a scientific researcher at the University of Minho (Portugal).  Also, visit my [Open Scientific Research Projects](https://github.com/aeonSolutions/Open-Scientific-Research) here on Github.
+This repo contains all software solutions coded while I was a scientific researcher at the University of Minho (Portugal).  Also, visit my [Open Scientific Research Projects](https://github.com/aeonSolutions/Open-Scientific-Research) here on GitHub.
 
 <br>
 
@@ -25,7 +25,7 @@ This repo contains all software solutions coded while I was a scientific researc
 
 **Project Total: ~30 work.h**
 
-The Duracon folder contains the software code (Visual Basic) for the Duracon Software, part of the Scientific Research Project PTDC/ECM/69565/2006 entitled: "SELICON - Service life Design – Modelling the durability performance of concrete structures" where I worked as a researcher. 
+The [Duracon folder](https://github.com/aeonSolutions/AeonLabs-Scientific-Research-Projects/tree/master/Duracon) contains the software code (Visual Basic) for the Duracon Software, part of the Scientific Research Project PTDC/ECM/69565/2006 entitled: "SELICON - Service life Design – Modelling the durability performance of concrete structures" where I worked as a researcher. A work done while I was a PhD student & Scientific Researcher in the Civil Engineering Department at the University of Minho. 
 
 <p align="center">
   <img src="https://github.com/aeonSolutions/AeonLabs-Scientific-Research-Projects/blob/master/duracon.png"> &nbsp;
@@ -35,7 +35,7 @@ The Duracon folder contains the software code (Visual Basic) for the Duracon Sof
 
 **Project Total: ~240 work.h**
 
-The ECOBuild folder contains the software (Visual Basic 6) utiized on the research work "Life cycle assessment of steel and reinforced concrete structures: A new analysis tool" pulbished [here](https://www.scopus.com/record/display.uri?eid=2-s2.0-79961056746&origin=inward&txGid=25697f2975aa656e8ae0380d78171c55).
+The [ECOBuild folder](https://github.com/aeonSolutions/AeonLabs-Scientific-Research-Projects/tree/master/EcoBuild) contains the software (Visual Basic 6) utilized on the research work "Life cycle assessment of steel and reinforced concrete structures: A new analysis tool" published [here](). A work done while I was a Junior Scientific Researcher in the Civil Engineering Department at the University of Minho. 
 
 
 <p align="center">
@@ -46,13 +46,15 @@ The ECOBuild folder contains the software (Visual Basic 6) utiized on the resear
 
 ■ **Expert Automation Files**
 
-The "Expert Automation Files" folder contains a collection of Excel workbooks related to Construction Building Materials , namely:
+The "[Expert Automation Files](https://github.com/aeonSolutions/AeonLabs-Scientific-Research-Projects/tree/master/Expert%20Automation%20Files)" folder contains a collection of Excel workbooks related to Construction Building Materials, namely:
 
-- Calculation of a mortar compostion 
+- Calculation of a mortar composition 
 - Sand Granulometry 
-- Geopolimers
+- Geopolymers
 - Faury Method
 - Compressive Strenght 
+
+A work done while I was a Junior Scientific Researcher in the Civil Engineering Department at the University of Minho. 
 
 <br>
 
@@ -60,7 +62,7 @@ The "Expert Automation Files" folder contains a collection of Excel workbooks re
 
 **Project Total: ~300 work.h**
 
-Statistical analysis software code (Visual Basic 6) of the state of tension on 4-point bending of thin multi-layered samples, implementation to ongoing research in the Physics Department.  
+The [FissurMax Folder](https://github.com/aeonSolutions/AeonLabs-Scientific-Research-Projects/tree/master/FissurMax) contains a statistical analysis software code (Visual Basic 6) of the state of tension on 4-point bending of thin multi-layered samples.  A work done while I was a Junior Scientific Researcher in the Physics Department at the University of Minho. 
 
 <br>
 
@@ -68,13 +70,13 @@ Statistical analysis software code (Visual Basic 6) of the state of tension on 4
 
 **Project Total: ~300 work.h**
 
-Statistical analysis software code (Visual Basic 6) of fracturing of thin coatings on a substrate, an implementation from a research thesis in the Physics Department  
+The [FissurMix](https://github.com/aeonSolutions/AeonLabs-Scientific-Research-Projects/tree/master/FissurMix) contains a statistical analysis software code (Visual Basic 6) of fracturing of thin coatings on a substrate. A work done while I was a Junior Scientific Researcher in the Physics Department at the University of Minho.   
 
 <br>
 
 ■ **Temperus**
 
-Finite Element analysis softeare code (Visual Basic 6) on multi layer coated  surfaces
+The [Temperus Flder](https://github.com/aeonSolutions/AeonLabs-Scientific-Research-Projects/tree/master/Temperus) contains the software code for Finite Element Analysis (Visual Basic 6) on multi-layer coated surfaces. A work done while I was a Junior Scientific Researcher in the Physics Department at the University of Minho. 
 
 <p align="center">
   <img src="https://github.com/aeonSolutions/AeonLabs-Scientific-Research-Projects/blob/master/Temperus/material.png"> &nbsp;
@@ -84,7 +86,7 @@ Finite Element analysis softeare code (Visual Basic 6) on multi layer coated  su
 
 ■ **Modulus**
 
-Software code (Visual Basic 6) to estimate the a composite Eleastic modules comprised of several thin substrates
+The [Modulus Folder](https://github.com/aeonSolutions/AeonLabs-Scientific-Research-Projects/tree/master/Modulus) contains the software code (Visual Basic 6) to estimate the composite Elastic modules comprised of several thin substrates. A work done while I was a Junior Scientific Researcher in the Physics Department at the University of Minho. 
 
 <p align="center">
   <img src="https://github.com/aeonSolutions/AeonLabs-Scientific-Research-Projects/blob/master/Modulus/4point%20bending.png"> &nbsp;
@@ -93,9 +95,7 @@ Software code (Visual Basic 6) to estimate the a composite Eleastic modules comp
  
 <br>
 
-## Join the WhatsApp Group
-If you like this kind of projects and want to stay updated with the latest research ideas and prototypes during the day and week, join the WhatsApp Group
-[LDAD Lab & Prototyping](https://chat.whatsapp.com/FkNC7u83kuy2QRA5sqjBVg)
+
 
 <br />
 <br />
