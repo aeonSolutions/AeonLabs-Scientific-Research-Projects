@@ -35,7 +35,7 @@ The [Duracon folder](https://github.com/aeonSolutions/AeonLabs-Scientific-Resear
 
 **Project Total: ~240 work.h**
 
-The [ECOBuild folder](https://github.com/aeonSolutions/AeonLabs-Scientific-Research-Projects/tree/master/EcoBuild) contains the software (Visual Basic 6) utilized on the research work "Life cycle assessment of steel and reinforced concrete structures: A new analysis tool" published [here](). A work done while I was a Junior Scientific Researcher in the Civil Engineering Department at the University of Minho. 
+The [ECOBuild folder](https://github.com/aeonSolutions/AeonLabs-Scientific-Research-Projects/tree/master/EcoBuild) contains the software (Visual Basic 6) utilized on the research work "Life cycle assessment of steel and reinforced concrete structures: A new analysis tool" published [here](https://aeonsolutions.github.io/publications/). A work done while I was a Junior Scientific Researcher in the Civil Engineering Department at the University of Minho. 
 
 
 <p align="center">
